@@ -1,0 +1,156 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(1, 1, 77,0.9);
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-head {
+  background-color: rgba(1, 1, 75, 0.5);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  align-items: center;
+  
+}
+
+h1 {
+  font-weight: 900;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.head-plan ul {
+  word-spacing: 1rem;
+}
+
+.head-plan li {
+  font-size: 1rem;
+  list-style-type: none;
+  display: inline;
+}
+
+.head-plan a {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.head-plan a:hover {
+  background-color: white;
+  color: blue;
+}
+
+.head-plan .btn {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.head-subtitle {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.container-cards {
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-essencial, .container-premium, .container-gold {
+  background-color: rgba(1, 1, 70, 0.9);  
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 5px 12px rgba(1, 1, 124, 0.9);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.card-essencial h2, .container-premium h2, .container-gold h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  margin: 0;
+  font-weight: bold;  
+  padding-bottom: .8rem;
+}
+
+.card-essencial p, .container-premium p, .container-gold p {
+  margin-top: 0;
+}
+
+.price-cards {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cards {
+  padding-left: 1.2rem;
+  margin: 0 0 35px 0;
+  line-height: 2;
+  flex-grow: 1;
+}
+
+.cards li::marker {
+  color: blue;
+}
+
+.card-essencial a, .container-premium a, .container-gold a {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;  
+  transition: 1s;  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-essencial a:hover, .container-premium a:hover, .container-gold a:hover {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  
+}
+
+.container-cards {
+  padding-bottom: 4rem;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rgba(1, 1, 70, 0.9);  
+  color: #fff;
+  text-align: right;
+  padding-right: 2rem;
+}
